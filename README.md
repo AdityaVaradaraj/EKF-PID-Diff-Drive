@@ -20,9 +20,9 @@ libi2c-dev
 ### Simulation:
 
 1) Install required packages
-2) Create a ROS2 package named diff_drive with ament_cmake (ros2 pkg create --build-type ament_cmake diff_drive)
+2) Create a ROS2 package named diff_drive with ament_cmake (```ros2 pkg create --build-type ament_cmake diff_drive```)
 3) Unzip given package and copy contents of src, include, CMakeLists.txt and package.xml into corresponding files/directories of the created ROS2 package.
-4) Set PID Gains, Robot dimensions and mode as "simulation" in main.cpp. Set trajectory (x_des,y_des, dydt_des, dxdt_des) in ControllerNode.cpp. 
+4) Set PID Gains, Robot dimensions and mode as "simulation" in main.cpp. Set trajectory (```x_des,y_des, dydt_des, dxdt_des```) in ControllerNode.cpp. 
 5) Save and ```colcon build```
 6) ```source install/setup.bash```
 7) In another terminal, ```ros2 launch turtlebot3_gazebo empty_world.launch``` (Launch the Gazebo world)
@@ -33,10 +33,10 @@ libi2c-dev
 ### Reality:
 
 1) Install required packages
-2) Create a ROS2 package named diff_drive with ament_cmake (ros2 pkg create --build-type ament_cmake diff_drive)
+2) Create a ROS2 package named diff_drive with ament_cmake (```ros2 pkg create --build-type ament_cmake diff_drive```)
 3) Unzip given package and copy contents of src, include, CMakeLists.txt and package.xml into corresponding files/directories of the created ROS2 package.
 4) Connect the IMU, encoders and motor driver to laptop using I2C. Make sure motors are connected properly to motor drivers.
-5) Edit Bus numbers, device addresses, register numbers, mode (set as "reality") accordingly in the code (main.cpp and ControllerNode.cpp). Set trajectory (x_des,y_des, dydt_des, dxdt_des) in ControllerNode.cpp. 
+5) Edit Bus numbers, device addresses, register numbers, mode (set as "reality") accordingly in the code (main.cpp and ControllerNode.cpp). Set trajectory (```x_des,y_des, dydt_des, dxdt_des```) in ControllerNode.cpp. 
 6) Save, ```colcon build```, and ```source install/setup.bash```
 7) ```ros2 run diff_drive diff_drive```
 8) If doesn't follow trajectory as expected, tune the PID Gains.
