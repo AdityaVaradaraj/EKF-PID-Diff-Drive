@@ -1,16 +1,16 @@
 # EKF-PID-Diff-Drive
-Applied EKF State Estimation on IMU data and Odometry information coming from Robot (either turtlebot3 or real robot), used the estimated state to apply PID control for reference trajectory tracking, sent velocity commands to the robot.
+## Applied EKF State Estimation on IMU data and Odometry information coming from Robot (either turtlebot3 or real robot), used the estimated state to apply PID control for reference trajectory tracking, sent velocity commands to the robot.
 
-## Gazebo Simulation
+### Gazebo Simulation
 
 https://drive.google.com/file/d/1znT5TkfQugAseCmxBbOOp1UmyG3KvECt/view?usp=drive_link
 
-## Robot configuration assumed:
+### Robot configuration assumed:
 
 1) In simulation mode, Turtlebot3 Waffle
 2) In reality mode, Robot with MPU6050 IMU, AS5600 Wheel Encoders, PCA9685 Motor Driver, 37D Metal Gear 6.25:1 12V Motors.  
 
-## Requirements:
+### Requirements:
 
 C++17
 
@@ -24,9 +24,9 @@ tf2_ros
 
 libi2c-dev
 
-## Instructions:
+### Instructions:
 
-### Simulation:
+#### Simulation:
 
 1) Install required packages
 2) Create a ROS2 package named diff_drive with ament_cmake (```ros2 pkg create --build-type ament_cmake diff_drive```)
@@ -40,7 +40,7 @@ libi2c-dev
 10) Repeat 5,6,7,8,9 till gains are well-tuned and expected behavior is seen.
 
 
-### Reality:
+#### Reality:
 
 1) Install required packages
 2) Create a ROS2 package named diff_drive with ament_cmake (```ros2 pkg create --build-type ament_cmake diff_drive```)
