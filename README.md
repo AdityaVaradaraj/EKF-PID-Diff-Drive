@@ -9,10 +9,15 @@ Apply EKF State Estimation on IMU data and Odometry information coming from Robo
 ## Requirements:
 
 C++17
+
 ROS2 Humble
+
 Eigen3 (3.3 or above) (libeigen3-dev)
+
 tf2
+
 tf2_ros
+
 libi2c-dev
 
 ## Instructions:
