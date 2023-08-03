@@ -4,7 +4,7 @@ Apply EKF State Estimation on IMU data and Odometry information coming from Robo
 ## Gazebo Simulation
 
 https://drive.google.com/file/d/1znT5TkfQugAseCmxBbOOp1UmyG3KvECt/view?usp=drive_link
-![](https://github.com/AdityaVaradaraj/EKF-PID-Diff-Drive/Results/README.md)
+![](https://github.com/AdityaVaradaraj/EKF-PID-Diff-Drive/blob/main/Results/ekf-pid-turtlebot3-gazebo-line-following_9BsjzPOf.mp4)
 
 
 ## Robot configuration assumed:
