@@ -1,6 +1,11 @@
 # EKF-PID-Diff-Drive
 Apply EKF State Estimation on IMU data and Odometry information coming from Robot (either turtlebot3 or real robot), use the estimated state to apply PID control for reference trajectory tracking, send velocity commands to the robot.
 
+## Gazebo Simulation
+
+https://drive.google.com/file/d/1znT5TkfQugAseCmxBbOOp1UmyG3KvECt/view?usp=drive_link
+
+
 ## Robot configuration assumed:
 
 1) In simulation mode, Turtlebot3 Waffle
@@ -35,6 +40,7 @@ libi2c-dev
 9) If doesn't follow trajectory as expected, interrupt the programs in both the terminals. Tune the PID Gains.
 10) Repeat 5,6,7,8,9 till gains are well-tuned and expected behavior is seen.
 
+
 ### Reality:
 
 1) Install required packages
@@ -46,3 +52,5 @@ libi2c-dev
 7) ```ros2 run diff_drive diff_drive```
 8) If doesn't follow trajectory as expected, tune the PID Gains.
 9) Repeat 6,7,8 till gains are well-tuned and expected behavior is seen.
+
+
